@@ -26,16 +26,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <%= link_to "Home", root_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#technology-div">Technology</a>
+            <%= link_to "About", about_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#short-service-description-div">About</a>
+            <%= link_to "Projects", projects_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#differences-section-div">Resources</a>
+            <%= link_to "Services", services_path, class: "nav-link" %>
           </li>       
         </ul>
       </div>
