@@ -66,3 +66,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.3.1'
 # jQuery gem
 gem 'jquery-rails'
+
+gem 'font_awesome5_rails'
+# Nokogiri
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'

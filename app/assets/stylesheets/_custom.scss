@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+	overflow-x: hidden; /*all the contents stays within the browser window and doesn't overflow outside of it*/
+	
+	color: #505962;
+}
+.offset:before {
+	display: block;
+	content: "";
+	height: 4rem;
+	margin-top: -3.5rem;
+}
+
+/*first-layer-section*/
+
+#first-header-section {
+    padding: 10px;
+    background: #bed1e4;
+}
+.first-header-section-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.social-media-icons-div ul {
+    list-style: none;
+    padding: 0px;
+    
+}
+
+.social-media-icons-div ul li {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 0.7em;
+}
+
+.social-media-icons-div ul li a {
+    color: white;
+    padding: 9px;
+    border: 1px solid black;
+    background: black;
+    border-radius: 100%;
+}
+.social-media-icons-div ul li a:hover {
+    color: #f16821;
+}
+
+#first-layer-contact-div ul {
+    list-style: none;
+}
+
+#first-layer-contact-div ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#first-layer-contact-div ul li a {
+    color: #f16821;
+    text-decoration: none;
+}
+
+#first-layer-contact-div ul li a:hover .right-icons {
+    color: #7b2e06;
+}
+
+#first-layer-contact-div ul li a span {
+    color: black;
+    padding-left: 5px;
+}
+
+
+/*Navigation*/
+
+.navbar {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background: #112840;
+}
+.navbar-brand img {
+	height: 2rem;
+}
+.navbar-nav li{
+	padding-right: .7rem;
+}
+.nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+.nav-link.active,
+.nav-link:hover {
+	color: #1ebba3;
+}
+
+/*Landing Page*/
+
+.home-inner {
+
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/header-pic_f1pmis.jpg')center/cover fixed no-repeat;
+    position: relative;
+}
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 40%;
+	z-index: 1; /* ensures the image is always ontop ot the backgraound*/
+	color: white;
+	text-transform: uppercase;
+}
+.caption h1 {
+	font-size: 3.8rem;
+	font-weight: 700rem;
+	letter-spacing: .3rem;
+	text-shadow: 1rem 1rem .8rem black; /*veritcal shadow, horizontal shadow and blur radian*/
+	padding-bottom: 1rem;
+}
+.caption h3 {
+	font-size: 2rem;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom: 1.6rem;
+	padding-bottom: 1rem;
+}
+.btn-lg {
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+}
+/*Course Section*/
+
+/*Technology*/
+#short-service-description-div{
+	background: #bed1e4;
+	padding: 5px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #011021;
+	font-weight: 900;
+}
+
+.read-more{
+	padding: 7px;
+	font-size: 1.5em;
+	border: 2px solid black;
+	color: #021325;
+	background: transparent;
+}
+
+.read-more:hover{
+	text-decoration: none;
+	background: #112840;
+	color: white;
+	border: 2px solid white;
+}
+
+/*services*/
+.services{
+	padding: 20px;
+	background-position: cover;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	}
+
+.fa-cogs {
+    color: #140e0e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding: 5px;
+    animation: servicesAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes servicesAnimation {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+      
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+
+.service-content h3 a {
+    color: #011325;
+    font-size: 0.9em;
+}   
+
+.service-content h3 a:hover {
+    text-decoration: underline;
+}
+
+.service-content-info{
+	text-align: left;
+    color: #1e020c;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-bottom: 2px solid #0b200c;
+}
+
+#service-content-title h1{
+  letter-spacing: 1rem;
+}
+
+#service-content-title h1:hover {
+   
+}
+
+#services-content-holder {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	align-items: start;
+	justify-items: center;
+	text-align: center;
+	max-width: 100%;
+	margin: 0 auto;
+	grid-gap: 20px;
+
+	font-size: 1.5em;
+    border-radius: 12px;
+	}
+
+.service-pic {
+    width: 80%;
+}
+
+.service-pic-div-one{
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/it-s-tech/image/upload/v1580503415/differences-background_l1ub0m.jpg')center/cover fixed no-repeat;
+    position: relative;
+}
+
+
+
+.see-more-link {
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    font-size: 0.8em;
+    color: white;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.service-pic-div-one:hover .see-more-link {
+    opacity: 1;
+    padding: 2px;
+    background: #0e0d0d4a;
+}
+
+.service-pic-div-two:hover .see-more-link {
+    opacity: 1;
+    padding: 2px;
+    background: #0e0d0d4a;
+}
+
+.service-pic-div-three:hover .see-more-link {
+    opacity: 1;
+    padding: 2px;
+    background: #0e0d0d4a;
+}
+
+.see-more-link:hover {
+    text-decoration: none;
+    color:darkgoldenrod;
+}
+
+#service-content-title{
+	grid-column: 1/-1;
+}
+
+#technology-div{
+	background: #90b0d4;
+}
+
+/*differences-section-div*/
+
+#differences-section-div{
+	padding: 40px 10px;
+	background: #f3f5f7;
+}
+
+#imagination-slogan-div{
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1580503415/differences-background_l1ub0m.jpg)center/cover fixed no-repeat;
+}
+
+/*footer section*/
+
+.site-footer {
+	background: #0c1e2f;
+}
+
+.service-paragraph{
+	font-size: 1.2em;
+}
+
+#home-page-services-wrapper{
+	background: #102840;
+}
+
+#frelancing-service-div{
+	height: 20vh;
+}
+
+#frelancing-service-div h1 {
+	background: #112840;
+	color: white;
+}
+
+/*About About section*/
+
+#mission-div {
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1581986499/first_m7ymqh.jpg)center/cover fixed no-repeat;
+}
+
+#vision-div {
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1581986476/how-to-speed-up-windows-10-hero1551746302019_xstnxp.jpg)center/cover fixed no-repeat;
+}
+
+#philosophy-div {
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1580503415/differences-background_l1ub0m.jpg)center/cover fixed no-repeat;
+}
+
+.social-media-icons {
+	color: #0f2a44;
+	border: 1px solid #0f2a44;
+	padding: 2px;
+}
