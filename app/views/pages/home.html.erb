@@ -1,6 +1,5 @@
 
-    
-
+   
     <section id="home">
 		<div class="landing">
 			<div class="home-wrap">
@@ -12,15 +11,16 @@
 
 		<div class="caption text-center">
 			<h1>Welcome to Group-Itstech</h1>
-			<h3>A Problem Free Society...<span>Our Vision</span></h3>
+			<h3>Accessing Quality Education From Anywhere at a low cost</h3>
 
-			<a class="btn btn-outline-light btn-lg" href="#courses">Learn More</a>
+			
+			<%= link_to "Read More", about_path, class: "btn btn-outline-light btn-lg" %>
 		</div>
 	</section>
 
 	<section id="short-service-description-div" class="text-center">
-		<h3 id="description" class="mb-5 h2">Group-Itstech Is A Web Development Company Aimed At Solving Societal problems that cut across, limitation to educational facilities, commerce and political transparency.</h3>
-		<a href="#" class="read-more" class="">Read More</a>
+		<h3 id="description" class="mb-5 h2">Group-Itstech Is A Web Development Company engaged in the building of solution solving educational web application which offers services to the African public.</h3>
+		<%= link_to "Read More", about_path, class: "read-more" %>
 	</section>
 
 	<section id= "technology-div" class="services">
@@ -146,18 +146,20 @@
 								<h4 class="card-title">FREELANCING</h4>
 								<p class="card-text service-paragraph">We are passionate about building your project under the following category</p>
 								<ol>
-									<li>Database Web driven Applications</li>
-									<li>Android Applications</li>
+									<li>Websites with blogs.</li>
+									<li>Android Applications.</li>
+									<li>Ecommerce</li>
 									<li>APIs</li>
 								</ol>
-								<a href="#" class="read-more">Read More</a>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+								<%= link_to "Read More", services_path, class: "read-more" %>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="card text-center">
 							<div class="card-body">
-								<h4 class="card-title">OTHERS</h4>
+								<h4 class="card-title">EDUAFRIK.COM</h4>
 								<p class="card-text service-paragraph">This category of projects is what defines our nich. It is made up of project we build to solve societal issues. We have three projects in this list waiting for sponsorship</p>
 								<ol>
 									<li>Afriklearn</li>
@@ -165,7 +167,8 @@
 									<li>myvote</li>
 								</ol>
 
-								<a href="#" class="read-more">Read More</a>
+								<!-- <a href="#" class="read-more">Read More</a> -->
+								<%= link_to "Read More", projects_path, class: "read-more" %>
 							</div>
 						</div>
 					</div>
