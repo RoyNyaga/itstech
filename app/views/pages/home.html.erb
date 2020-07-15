@@ -1,4 +1,4 @@
-<div class="container-fluid d-flex align-items-center justify-content-center p-0 text-white wow animate__rotateIn" id="header-wrapper-div" >
+<div class="container-fluid d-flex align-items-center justify-content-center p-0 text-white wow animate__rotateIn" id="header-wrapper-div" data-wow-duration="3s">
       <div class="row text-center w-100" id="header-row-div">
         <div class="col-md-2 d-none d-md-flex align-items-center wow animate__fadeInLeft" data-wow-duration="8s">
           <p></p>
@@ -14,14 +14,14 @@
           <p></p>
         </div>
           <a class="phone-header-arrow d-md-none text-center wow animate__bounce" data-wow-duration="4s" data-wow-iteration="infinite" href="#"><i class="fa fa-angle-double-down"></i></a>
-          <a class="d-none d-md-inline header-arrow wow animate__bounce" data-wow-duration="4s" data-wow-iteration="infinite" href="#"><i class="fa fa-angle-double-down"></i></a>
+          <a class="d-none d-md-inline header-arrow wow animate__bounce" data-wow-duration="4s" data-wow-iteration="infinite" href="#home-level-one"><i class="fa fa-angle-double-down"></i></a>
       </div>
     </div>
 
      <%= render "partials/nav" %>
 
     <div class="container my-5" id="home-level-one">
-      <h1 class="d-none d-md-block text-center py-5">
+      <h1 class="d-none d-md-block text-center py-5 wow animate__backInRight" data-wow-duration="3s">
         We deploy world-class agile product teams on demand. Teams that can design, build, ship and scale your <br>web application in the most efficient way. 
       </h1>
       <h4 class="d-md-none text-center py-5">
@@ -33,26 +33,26 @@
     <section id="numbers" class="my-5">
       <div class="container text-center">
         <div class="header text-center">
-          <h1><strong>Numbers Never Lie</strong></h1>
+          <h1 class="wow animate__backInLeft" data-wow-duration="3s"><strong>Numbers Never Lie</strong></h1>
           <div class="header-underline"></div>
-          <p class="">More than 5 years in the game and we're just getting started. </p>
+          <p class="wow animate__backInRight" data-wow-duration="3s">More than 5 years in the game and we're just getting started. </p>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 wow animate__backInDown" data-wow-duration="3s">
             <i class="fa fa-users"></i>
             <h3 class="d-none d-md-block">Clients</h3>
             <h6 class="d-md-none">Clients</h6>
             <h1><span class='numscroller' data-min='1' data-max='25' data-delay='50' data-increment='1'>25</span></h1>
           </div>
 
-          <div class="col-4">
+          <div class="col-4 wow animate__backInDown" data-wow-duration="3s">
             <i class="fa fa-envelope"></i>
             <h3 class="d-none d-md-block">Experience</h3>
             <h6 class="d-md-none">Experience</h6>
             <h1><span class='numscroller' data-min='1' data-max='5' data-delay='20' data-increment='1'>5 years</span></h1>
           </div>
 
-          <div class="col-4">
+          <div class="col-4 wow animate__backInDown" data-wow-duration="3s">
             <i class="fa fa-archive"></i>
             <h3 class="d-none d-md-block">Projects</h3>
             <h6 class="d-md-none">Projects</h6>
@@ -65,29 +65,29 @@
     <div class="container-fluid" id="home-level-two">
       <div class="row">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <div>
+          <div class="wow animate__fadeIn" data-wow-duration="5s">
             <h1 class="text-center">Experts in every aspect of the product lifecycle</h1>
             <p class="text-center genral-font-color">Whether you're a Fortune 500 or a startup in stealth mode - we give our clients the creative, technical and business talent they need to succeed.</p>
           </div>
         </div>
         <div class="col-md-6">
           <div id="home-page-service-1">
-            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100 wow animate__fadeInRight" data-wow-duration="3s">
               <a class="links-general-slide-right text-center" href="#"><h3>Ideation And Evaluation</h3></a>
             </div>
           </div>
           <div id="home-page-service-2">
-            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100 wow animate__fadeInRight" data-wow-duration="3s">
               <a class="links-general-slide-right" href="#"><h3>Product Design</h3></a>
             </div>
           </div>
           <div id="home-page-service-3">
-            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100 wow animate__fadeInRight" data-wow-duration="3s">
               <a class="links-general-slide-right" href="#"><h3>Web Development</h3></a>
             </div>
           </div>
           <div id="home-page-service-4">
-            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100 wow animate__fadeInRight" data-wow-duration="3s">
               <a class="links-general-slide-right" href="#"><h3>Mobile Development</h3></a>
             </div>
           </div>
@@ -97,7 +97,7 @@
 
     <section class="py-5" id="clients">
       <div class="container py-5">
-        <div class="header text-center py-5">
+        <div class="header text-center py-5 wow animate__fadeIn" data-wow-duration="5s">
           <h2>Our Technology</h2>
           <div class="header-underline"></div>
           <p class="text-muted">We give you the best out of the latest technologies</p>
@@ -135,8 +135,8 @@
     </section>
 
     <div class="container-fluid py-5 text-center text-white" id="home-level-three">
-      <h3>Tells us about your website</h3>
-      <a class="background-button-link d-inline-block mt-4" href="#">Request</a>
+      <h3 class="wow animate__fadeInLeft" data-wow-duration="3s">Tells us about your website</h3>
+      <a class="background-button-link d-inline-block mt-4 wow animate__shakeY" data-wow-duration="3s" data-wow-iteration="infinite" href="mailto:itstechcam@gmail.com" target="_blank">Request</a>
     </div>
 
     <div class="container py-5" id="home-level-four">
