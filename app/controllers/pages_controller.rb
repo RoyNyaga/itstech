@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   def services
   end
 
-  def projects
+  def client
   end
   
 end
