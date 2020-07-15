@@ -357,3 +357,37 @@ body{
 	border-radius: 50px;
 	padding: 10px;
 }
+
+/*############### absolute-contact-button ###################*/
+#absolute-contact-button{
+	background: #554037;
+	color: #b4b3af;
+	position: fixed;
+	padding: 20px;
+	top: 90%;
+	left: 90%;
+	border: 2px solid #fd7e13;
+	border-radius: 50%;
+	transition: all 1s ease-in-out;
+}
+
+#absolute-contact-button:hover{
+	color: #fd7e13;
+	text-decoration: none;
+}
+
+#absolute-contact-button-phone{
+	background: #554037;
+	color: #b4b3af;
+	position: fixed;
+	padding: 10px;
+	top: 88%;
+	left: 70%;
+	border: 2px solid #fd7e13;
+	border-radius: 50%;
+	font-size: 0.8em;
+}
+
+#absolute-contact-button-phone:hover {
+	color: #fd7e13;
+}
