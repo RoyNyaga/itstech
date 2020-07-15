@@ -1,73 +1,195 @@
-<section id="about-section-div">
-		<div class="container">
-			<h2 class="text-center my-4 font-weight-bolder">About Group-<span>Itstech</span></h2>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="card text-center">
-						<%= image_tag('https://res.cloudinary.com/it-s-tech/image/upload/v1581986482/woman-standing-on-the-center-table-with-four-people-on-the-1367271_kropda.jpg', class: "card-img-top", alt: "missing pic") %>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h4 class="font-weight-bolder my-4 text-center">What we are and what we do.</h4>
-					<p class="h5">Group-Itstech is a c-cooperate company having its base in Cameroon and is engaged in the building of solution solving educational web application which offers services to the African public. Our team focuses on providing truly excellent services by delivering the industry’s most innovative solutions through stunning corporate-grade Educational web applications.<br>
-                    We are driven by the passion to effectively accomplish clearly stated goals and objectives related to our vision. We also engage in freelancing of projects proposed to us by other enterprises and interested clients.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row my-5">
-			<div class="col-md-4 d-flex justify-content-between" id="mission-div">
-				<p class="font-weight-light font-italic h1">01</p>
-				<div class="text-white">
-					<h2 class="text-center p-5"> Our Mission</h2>
-					<p>Facilitating access to quality education in Africa at a low cost using web technologies. We are committed to building sophisticated Educational applications with not just quality information but capable of matching up with the classroom experience.</p>
-				</div>
-			</div>
-			<div class="col-md-4 d-flex justify-content-between" id="vision-div">
-				<p class="font-weight-light font-italic h1">02</p>
-				<div class="text-white">
-					<h2 class="text-center p-5">Our Vision</h2>
-					<p>Becoming the most attended online Educational platform in Africa.</p>
-				</div>
-			</div>
-			<div class="col-md-4 d-flex justify-content-between" id="philosophy-div">
-				<p class="font-weight-light font-italic h1">03</p>
-				<div class="text-white p-5">
-					<h2 class="text-center"> Our Philosophy</h2>
-					<p>Our company philosophy is to create the kind of Educational web applications that will be accessible by the African public at a minimum cost, increasing percentage success leading to a better Africa. Education for a better Africa.</p>
-				</div>
-			</div>
-		</div>
 
-		<div class="container">
-			<h2 class="text-center pb-5">Our Team</h2>
-			<div class="row">
-				<div class="col-md-3 col-6">
-					<div class="card text-center">
-						<%= image_tag('https://res.cloudinary.com/it-s-tech/image/upload/v1581986476/IMG-20200201-WA0005_stor0q.jpg', class: "card-img-top", alt: "card image cap") %>
-						<div class="card-body">
-							<h4 class="card-title">Nji Cliff</h4>
-							<p class="card-text">CEO<br>williajeni@gmail.com<br>+237671172775</p>
-							<div class="d-flex justify-content-between">
-								<a class="social-media-icons" href="https://web.facebook.com/cliff.nji.5/about?lst=100035029012530%3A100004168110665%3A1581987607" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a class="social-media-icons" href="https://twitter.com/CliffNji" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-6">
-					<div class="card text-center">
-						<%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1581986476/roy_bgbxhi.jpg", class: "card-img-top", alt: "missing pic") %>
-						<div class="card-body">
-							<h4 class="card-title">Roy Nyaga</h4>
-							<p class="card-text">Full Stack web developer<br>nyagaandreroy@gmail.com<br>237671172775</p>
-							<div class="d-flex justify-content-between">
-								<a class="social-media-icons" href="https://web.facebook.com/roy.nyaga.77" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a class="social-media-icons" href="https://www.linkedin.com/in/nyaga-roy-7a3698186/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="social-media-icons" href="https://twitter.com/nyagaandreroy1" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="container-fluid d-flex align-items-center justify-content-center" id="about-page-header">
+      <div>
+        <h2 class="text-white text-center heading-standout">One of the fastest-growing</h2>
+        <h2 class="heading-standout text-center" style="color: #00ace0;">sofware agencies in Cameroon</h2>
+        <p class="text-white text-center">We design and develop web and mobile applications for our clients <br>
+worldwide, focusing on outstanding user experience.</p>
+      </div>
+    </div>
+    <%= render "partials/nav" %>
+
+    <div class="container py-5" id="about-page-section-one">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 py-5">
+          <h2 class="heading-standout text-center">Building software for <span style="color: #00ace0;">world changers</span></h2>
+          <p class="genral-font-color">Group-Itstech builds digital products that let people do things differently. Share your challenge with our team, and we’ll work with you to deliver a revolutionary digital product. Our clients have changed the way people do commerce, listen to music, learn languages, and rent bikes. Their products have been featured in TechCrunch, Business Insider, and Product Hunt.</p>
+        </div>
+        <div class="col-md-2"></div>
+
+      </div>      
+    </div>
+
+    <section id="promise">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 promise-picture"></div>
+          <div class="col-sm-6 promise-text d-flex align-items-center">
+            <div>
+              <h3 class="heading-standout py-5">Over the last 5 years, we’ve helped our clients ship products for multiple platforms</h3>
+              <p class="genral-font-color">Collaborating with Group-Itstech had a lasting impact on our ability to be innovative and execute at a pace. The team there have a strong focus on not just doing what you ask for but also thinking really hard about the problem first to see how it can be solved differently, faster, and better.</p>
+              <div class="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h1 class="heading-standout text-center">5+</h1>
+                    <p class="genral-font-color text-center">Years on the market</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h1 class="heading-standout text-center">45+</h1>
+                    <p class="genral-font-color text-center">Projects delivered so far</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </section>
+
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-3 text-right d-none d-md-block">
+              <i class="fas fa-quote-left about-page-quote blue-text"></i>
+            </div>
+            <div class="col-md-9">
+              <h2 class="heading-standout d-none d-md-block">
+                Since the beginning our main goal was to help entrepreneurs build new software solution that matters. Building and shipping products that are helpful for people, making world a better place, for everyone, including ourselves.
+              </h2>
+              <h4 class="heading-standout d-md-none">
+                Since the beginning our main goal was to help entrepreneurs build new software solution that matters. Building and shipping products that are helpful for people, making world a better place, for everyone, including ourselves.
+              </h4>
+              <div class="row mt-5 d-none d-md-flex">
+                <div class="col-md-2">
+                  <img class="img-responsive" style="width: 100%; border: 2px solid #00ace0; border-radius: 50%;" src="https://res.cloudinary.com/it-s-tech/image/upload/v1581986476/roy_bgbxhi.jpg">
+                </div>
+                <div class="col-md-9 d-flex align-items-center">
+                  <p class="genral-font-color">Nyaga Andre Roy, CEO</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <div class="container my-5 my-5">
+      <div class="row">
+        <div class="col-md-7">
+          <h2 class="heading-standout">Our values <span class="blue-text">shape the way we</span> work with our clients, delivering outstanding user experience supported by cutting-edge technologies</h2>
+          <p class="genral-font-color mt-4">Group-Itstech's core values evolved with us as the company grew and we learned from our experiences. They epitomise what we want to achieve, and they might change in the future, as we aim higher and higher. We think of those values as important to our culture and individual sense of accomplishment.</p>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-3">
+          <span class="about-page-numbers">1</span>
+          <h5 class="mt-4 pb-3">Exceed clients’ and colleagues’ expectations</h5>
+          <p class="genral-font-color">Never settle for "good enough" when you know you can and should do better. It isn’t about measuring your performance against that of others – it’s about giving yourself permission to go the extra mile and do work you can be proud of.</p>
+        </div>
+
+        <div class="col-md-3">
+          <span class="about-page-numbers">2</span>
+          <h5 class="mt-4 pb-3">Take ownership and question the status quo in a constructive manner</h5>
+          <p class="genral-font-color">Trust your gut and your knowledge, even if you need to question your team leader or CEO. We are all people – fallible but trying our best. Netguru’s culture allows us to appreciate openness and constructive feedback.</p>
+        </div>
+
+        <div class="col-md-3">
+          <span class="about-page-numbers">3</span>
+          <h5 class="mt-4 pb-3">Be brave, curious and experiment – learn from all successes and failures</h5>
+          <p class="genral-font-color">We believe that having the freedom to take risks and make mistakes is extremely important in any work environment. That’s how we learn, and how we innovate: by trying out ideas and looking at our results.</p>
+        </div>
+
+        <div class="col-md-3">
+          <span class="about-page-numbers">4</span>
+          <h5 class="mt-4 pb-3">Act in a way that makes all of us proud</h5>
+          <p class="genral-font-color">We are all in this together and everything you say and do, whether internally or publically, reflects on us. We all deserve respect, and one way to make sure we get it is by holding ourselves accountable for our own actions.</p>
+        </div>
+
+        <div class="col-md-3">
+          <span class="about-page-numbers">5</span>
+          <h5 class="mt-4 pb-3">Build an inclusive, transparent and socially responsible culture</h5>
+          <p class="genral-font-color">Culture doesn’t happen by chance – we need to be proactive and work on it every day, taking full responsibility for the results. We want everyone to have a voice, and we want our activities as a company to be transparent.</p>
+        </div>
+
+        <div class="col-md-3">
+          <span class="about-page-numbers">6</span>
+          <h5 class="mt-4 pb-3">Be ambitious and grow yourself and the people around you</h5>
+          <p class="genral-font-color">Having ambition and working towards career goals is a wonderful thing, and we want to fully support you on your path. But as you forge ahead, be mindful of the people around you and of how you can help each other.</p>
+        </div>
+
+        <div class="col-md-3">
+          <span class="about-page-numbers">7</span>
+          <h5 class="mt-4 pb-3">Recognise excellence and engagement</h5>
+          <p class="genral-font-color">What others think of you should never be your most important concern, but we all know the value of well-earned respect and constructive feedback. Validation and recognition are important.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="heading-standout">Shaping a vision, delivering software, creating world class experiences</h2>
+          <p class="genral-font-color mt-4">Collaborating with Netguru has had a lasting impact on our ability to be innovative and execute at a pace. The team there have a strong focus on not just doing what you ask for.</p>
+          <a class="links-general-slide-right blue-button" href="#">Our services</a>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="about-page-domain-divs">
+            <h5 class="my-5">Project Kickoff</h5>
+            <p class="genral-font-color">Regardless of whether you need to craft an idea for a completely new product or evaluate the quality of an already existing one – we're here to help you.</p>
+          </div>
+          <div class="about-page-domain-divs">
+            <h5 class="my-5">Ideation and Evaluation</h5>
+            <p class="genral-font-color">Give your product idea a real shape. Plan and evaluate the essential features of your product to accomplish your business goals and eliminate potential mistakes.</p>
+          </div>
+          <div class="about-page-domain-divs">
+            <h5 class="my-5">Design Process</h5>
+            <p class="genral-font-color">Craft delightful user experiences for your digital products. Solve real problems and improve your vital business metrics through beautiful interfaces.</p>
+          </div>
+          <div class="about-page-domain-divs">
+            <h5 class="my-5">Development Process</h5>
+            <p class="genral-font-color">Create beautiful, fast, and secure applications tailored precisely to your business goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background: #098fb9;">
+      <div class="container py-5">
+        <h3 class="text-white py-5 text-center">Administrators</h3>
+        <div class="row">
+          <div class="col-md-3 col-8 mx-auto text-center">
+            <img src="https://res.cloudinary.com/it-s-tech/image/upload/v1581986476/roy_bgbxhi.jpg" class="img-responsive" style="width: 90%; border-radius: 50%;">
+            <p class="text-center text-white genral-font-color mt-3">Roy Andre <br> CEO, Product Manager <br>+237671172775</p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 col-8 mx-auto text-center">
+            <img src="https://res.cloudinary.com/it-s-tech/image/upload/v1581986476/IMG-20200201-WA0005_stor0q.jpg" style="width: 90%; border-radius: 50%;">
+            <p class="text-center text-white genral-font-color mt-3">Nji Clif <br> Executive Chairman, developer  <br>+237671172775</p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 col-8 mx-auto text-center">
+            <img src="https://res.cloudinary.com/it-s-tech/image/upload/v1593500834/Group-Itstech/WhatsApp_Image_2020-06-29_at_9.30.23_PM_1_pqr5uf.jpg" style="width: 90%; border-radius: 50%;">
+            <p class="text-center text-white genral-font-color mt-3">Array Joel <br> Full-Stack developer  <br>+237671172775</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="col-md-7 mx-auto">
+          <h2 class="heading-standout text-center">We believe that people are the key to success and we feel proud every time when someone new is joining</h2>
+        </div>
+      </div>
+    </div>
