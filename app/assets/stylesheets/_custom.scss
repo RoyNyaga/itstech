@@ -1,341 +1,307 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+/*font-family: 'Caladea', serif; general font*/
+/*font-family: 'Vollkorn', serif; general*/
+/*font-family: 'Bree Serif', serif; headings*/
+/*font-family: 'Patua One', cursive; headings*/
+/*font-family: 'Noto Serif', serif; navlinks*/ 
 
-body {
-	overflow-x: hidden; /*all the contents stays within the browser window and doesn't overflow outside of it*/
-	
-	color: #505962;
-}
-.offset:before {
-	display: block;
-	content: "";
-	height: 4rem;
-	margin-top: -3.5rem;
+
+body{
+	font-family: 'Bree Serif', serif!important;
+	background: #f3f8f9!important;
 }
 
-/*first-layer-section*/
-
-#first-header-section {
-    padding: 10px;
-    background: #bed1e4;
-}
-.first-header-section-div {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+.blue-text {
+	color: #00ace0;
 }
 
-.social-media-icons-div ul {
-    list-style: none;
-    padding: 0px;
-    
+.background-button-link{
+	padding: 10px;
+	border: 2px solid #aac1c7;
+	color: #aac1c7;
+	transition: background 1s ease-in-out;
 }
 
-.social-media-icons-div ul li {
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 0.7em;
+.background-button-link:hover{
+	background: #274d58;
+	text-decoration: none;
+	color: #aac1c7;
 }
 
-.social-media-icons-div ul li a {
-    color: white;
-    padding: 9px;
-    border: 1px solid black;
-    background: black;
-    border-radius: 100%;
-}
-.social-media-icons-div ul li a:hover {
-    color: #f16821;
+.genral-font-color{
+	color: #6f797b;
 }
 
-#first-layer-contact-div ul {
-    list-style: none;
+.bold{
+	font-weight: 700;
 }
 
-#first-layer-contact-div ul li{
-    display: inline-block;
-    margin-left: 10px;
+.heading-standout {
+	font-family: 'Patua One', cursive;
 }
 
-#first-layer-contact-div ul li a {
-    color: #f16821;
-    text-decoration: none;
+.links-general-slide-right{
+	color: #00ace0;
+	transition: all 1s ease-in-out;
 }
 
-#first-layer-contact-div ul li a:hover .right-icons {
-    color: #7b2e06;
+.links-general-slide-right:hover {
+	color: #37555f;
+	transform: translateX(20px);
 }
 
-#first-layer-contact-div ul li a span {
-    color: black;
-    padding-left: 5px;
+.blue-button{
+	padding: 10px;
+	color: white;
+	background: #00ace0;
+	display: inline-block;
+	margin-top: 50px;
+	border-radius: 20px;
 }
 
 
-/*Navigation*/
+/*############### Header #################3*/
+
+#header-wrapper-div{
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://res.cloudinary.com/it-s-tech/image/upload/v1584899473/black-flat-screen-computer-monitor-1714208_cfpj79.jpg) center/cover no-repeat fixed;
+	height: 100vh;
+}
+
+#header-row-div{
+	position: relative;
+}
+
+#header-photo-div{
+	box-shadow: 0px 10px 20px #00ace0;
+}
+
+.anime-move-up{
+	transition: transform 2s ease-in-out;
+}
+
+.anime-move-up:hover {
+	transform: rotate(20deg);
+}
+
+.phone-header-arrow{
+	position: absolute;
+	top:100%;
+	left: 50%;
+	color: #00ace0;
+	background: transparent;
+	border: 2px solid #00ace0;
+	border-radius: 50%;
+	font-size: 2em;
+}
+
+.header-arrow {
+	position: absolute;
+	left: 50%;
+	top: 430px;
+	color: #00ace0;
+	background: transparent;
+	border: 2px solid #00ace0;
+	border-radius: 50%;
+	font-size: 2em;
+}
+
+/*#################### Navbar #################3*/
+/* navigation bar */
 
 .navbar {
-	text-transform: uppercase;
-	font-weight: 700;
 	font-size: .9rem;
 	letter-spacing: .1rem;
-	background: #112840;
+	background: #274d58;
 }
 .navbar-brand img {
-	height: 2rem;
+	height: 3rem;
 }
 .navbar-nav li{
 	padding-right: .7rem;
 }
 .nav-link {
-	color: white;
+	color: #a9b4b7;
 	padding-top: .8rem;
+	font-weight: 700;
+	border-bottom: 2px solid transparent;
+	transition: all 1s ease-in-out;
+	font-family: 'Noto Serif', serif;
 }
-.nav-link.active,
+
 .nav-link:hover {
-	color: #1ebba3;
-}
-
-/*Landing Page*/
-
-.home-inner {
-
-	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/header-pic_f1pmis.jpg')center/cover fixed no-repeat;
-    position: relative;
-}
-.caption {
-	width: 100%;
-	max-width: 100%;
-	position: absolute;
-	top: 40%;
-	z-index: 1; /* ensures the image is always ontop ot the backgraound*/
 	color: white;
-	text-transform: uppercase;
+	transform: translateY(-10px);
 }
-.caption h1 {
-	font-size: 3.8rem;
-	font-weight: 700rem;
-	letter-spacing: .3rem;
-	text-shadow: 1rem 1rem .8rem black; /*veritcal shadow, horizontal shadow and blur radian*/
-	padding-bottom: 1rem;
-}
-.caption h3 {
-	font-size: 2rem;
-	text-shadow: .1rem .1rem .5rem black;
-	padding-bottom: 1.6rem;
-	padding-bottom: 1rem;
-}
-.btn-lg {
-	border-width: medium;
-	border-radius: 0;
-	padding: .6rem 1.3rem;
-	font-size: 1.1rem;
-}
-/*Course Section*/
 
-/*Technology*/
-#short-service-description-div{
-	background: #bed1e4;
-	padding: 5px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-right: 10px;
+/*############# Home page section #########*/
+.fa-eye{
+	font-size: 4em;
+	color: #274d58;
+}
+
+#shift-up-link{
+	position: relative;
+	bottom: 20px;
 	padding-left: 10px;
-	color: #011021;
-	font-weight: 900;
 }
 
-.read-more{
-	padding: 7px;
-	font-size: 1.5em;
-	border: 2px solid black;
-	color: #021325;
-	background: transparent;
+#home-page-service-1{
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1594776851/Group-Itstech/photo-of-men-doing-fist-bump-3184302_k5wfph.jpg)center/cover no-repeat;
+	border: 1px solid #274d58;
+	height: 20vh;	
 }
 
-.read-more:hover{
-	text-decoration: none;
-	background: #112840;
-	color: white;
-	border: 2px solid white;
-}
-
-/*services*/
-.services{
-	padding: 20px;
-	background-position: cover;
-	background-attachment: fixed;
-	background-repeat: repeat;
-	}
-
-.fa-cogs {
-    color: #140e0e;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    padding: 5px;
-    animation: servicesAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes servicesAnimation {
-    0% {
-        transform: rotate(360deg);
-    }
-    50% {
-      
-        transform: rotate(-360deg);
-    }
-    100% {
-        transform: rotate(360deg); 
-    }
-}
-
-
-.service-content h3 a {
-    color: #011325;
-    font-size: 0.9em;
-}   
-
-.service-content h3 a:hover {
-    text-decoration: underline;
-}
-
-.service-content-info{
-	text-align: left;
-    color: #1e020c;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    border-bottom: 2px solid #0b200c;
-}
-
-#service-content-title h1{
-  letter-spacing: 1rem;
-}
-
-#service-content-title h1:hover {
-   
-}
-
-#services-content-holder {
-	padding: 10px;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-gap: 10px;
-	align-items: start;
-	justify-items: center;
-	text-align: center;
-	max-width: 100%;
-	margin: 0 auto;
-	grid-gap: 20px;
-
-	font-size: 1.5em;
-    border-radius: 12px;
-	}
-
-.service-pic {
-    width: 80%;
-}
-
-.service-pic-div-one{
-    padding: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/it-s-tech/image/upload/v1580503415/differences-background_l1ub0m.jpg')center/cover fixed no-repeat;
-    position: relative;
-}
-
-
-
-.see-more-link {
-    position: absolute;
-    bottom: 20%;
-    left: 15%;
-    font-size: 0.8em;
-    color: white;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.service-pic-div-one:hover .see-more-link {
-    opacity: 1;
-    padding: 2px;
-    background: #0e0d0d4a;
-}
-
-.service-pic-div-two:hover .see-more-link {
-    opacity: 1;
-    padding: 2px;
-    background: #0e0d0d4a;
-}
-
-.service-pic-div-three:hover .see-more-link {
-    opacity: 1;
-    padding: 2px;
-    background: #0e0d0d4a;
-}
-
-.see-more-link:hover {
-    text-decoration: none;
-    color:darkgoldenrod;
-}
-
-#service-content-title{
-	grid-column: 1/-1;
-}
-
-#technology-div{
-	background: #90b0d4;
-}
-
-/*differences-section-div*/
-
-#differences-section-div{
-	padding: 40px 10px;
-	background: #f3f5f7;
-}
-
-#imagination-slogan-div{
-	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1580503415/differences-background_l1ub0m.jpg)center/cover fixed no-repeat;
-}
-
-/*footer section*/
-
-.site-footer {
-	background: #0c1e2f;
-}
-
-.service-paragraph{
-	font-size: 1.2em;
-}
-
-#home-page-services-wrapper{
-	background: #102840;
-}
-
-#frelancing-service-div{
+#home-page-service-2{
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1594776845/Group-Itstech/fashion-art-coffee-macbook-pro-57690_rvsw0z.jpg)center/cover no-repeat;
+	border: 1px solid #274d58;
 	height: 20vh;
 }
 
-#frelancing-service-div h1 {
-	background: #112840;
-	color: white;
+#home-page-service-3{
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1594776847/Group-Itstech/silver-imac-displaying-collage-photos-1779487_avyog2.jpg)center/cover no-repeat;
+	border: 1px solid #274d58;
+	height: 20vh;
 }
 
-/*About About section*/
-
-#mission-div {
-	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1581986499/first_m7ymqh.jpg)center/cover fixed no-repeat;
+#home-page-service-4{
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1594776845/Group-Itstech/apple-devices-cellphone-close-up-electronics-341523_wlodkb.jpg)center/cover no-repeat;
+	border: 1px solid #274d58;
+	height: 20vh;
 }
 
-#vision-div {
-	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1581986476/how-to-speed-up-windows-10-hero1551746302019_xstnxp.jpg)center/cover fixed no-repeat;
+.home-page-service-content{
+	background: white;
+	transition: all 2s ease-in-out;
 }
 
-#philosophy-div {
-	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/it-s-tech/image/upload/v1580503415/differences-background_l1ub0m.jpg)center/cover fixed no-repeat;
+.home-page-service-content:hover{
+	opacity: 0.5;
 }
 
-.social-media-icons {
-	color: #0f2a44;
-	border: 1px solid #0f2a44;
-	padding: 2px;
+#home-level-three{
+	background: linear-gradient(rgba(9,48,60,0.5), rgba(9,48,60,0.5)),url(https://res.cloudinary.com/it-s-tech/image/upload/v1594776845/Group-Itstech/fashion-art-coffee-macbook-pro-57690_rvsw0z.jpg)center/cover fixed no-repeat;
+}
+
+#quotes{
+	color: whitesmoke;
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1590288503/bavaria-munich-octoberfest-oktoberfest-9827_fgrawx.jpg) fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.quotes-background {
+	background: rgba(9,48,60,0.5);
+}
+
+#quotes img{
+	width: 200px;
+	background: #a0cee2;
+}
+
+#quotes blockquote {
+	border-left: 0;
+	line-height: 2;
+	font-size: 2;
+	font-size: 19px;
+}
+
+#quotes blockquote footer{
+	color: #a9d0e0;
+	font-size: 16px;
+}
+
+#quotes .fa{
+	color: #a0cee2;
+	font-size: 40px;
+	margin: 0 10px;
+}
+
+#numbers{
+	padding: 40px;
+	background: linear-gradient(rgba(9,48,60,0.5), rgba(9,48,60,0.5)),url(https://res.cloudinary.com/it-s-tech/image/upload/v1594776850/Group-Itstech/meter-at-0000-1364700_wpm3jr.jpg)center/cover fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: whitesmoke;
+}
+
+#numbers .fa{
+	font-size: 40px;
+	color: #89d7ef;
+}
+
+/*#############About page###########*/
+#about-page-header{
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://res.cloudinary.com/it-s-tech/image/upload/v1593377850/Group-Itstech/top-view-photo-of-people-near-wooden-table-3183150_aij8bj.jpg) center/cover no-repeat fixed;
+	height: 70vh;
+}
+
+.promise-picture {
+	height: 80vh;
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1593380783/Group-Itstech/fashion-art-coffee-macbook-pro-57690_cbfqnr.jpg) center/cover no-repeat fixed;
+	border-top: 600px solid transparent;
+	border-right: 150px solid whitesmoke;
+}
+
+.promise-text {
+	height: 600px;
+	background: whitesmoke;
+	padding: 40px 20px;
+}
+
+.promise-icons {
+	font-size: 20px;
+	line-height: 1.2em;
+}
+
+#promise .fa{
+	color: #F15025;
+	font-size: 40px;
+}
+
+.about-page-quote{
+	font-size: 3em;
+}
+
+.about-page-numbers{
+	padding: 0 20px;
+	font-size: 3em;
+	background: #00ace038;
+	color: #00ace0;
+	border-radius: 50%;
+
+}
+
+
+
+.about-page-domain-divs{
+	background: #eaf3f5;
+}
+
+/*##############3Services section#############3*/
+#services-page-header{
+	height: 80vh;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://res.cloudinary.com/it-s-tech/image/upload/v1593502214/Group-Itstech/people-sitting-beside-brown-wooden-desk-near-flat-screen-tv-1181355_uuopfr.jpg) center/cover no-repeat fixed;
+}
+
+/*###########3Clients section############*/
+#client-page-header{
+	height: 80vh;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://res.cloudinary.com/it-s-tech/image/upload/v1594687559/Group-Itstech/man-and-woman-near-table-3184465_rzmldr.jpg) center/cover no-repeat fixed;
+}
+
+.client-level-three-photo-div{
+	overflow: hidden;
+}
+
+.client-level-three-photo{
+	transition: all 2s ease-in-out;
+}
+
+.client-level-three-photo:hover {
+	transform: scale(1.5);
+}
+
+.client-page-client-word{
+	background: #d7e4e8;
 }

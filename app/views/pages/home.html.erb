@@ -1,223 +1,219 @@
-    <section id="home">
-		<div class="landing">
-			<div class="home-wrap">
-				<div class="home-inner" style="height: 50rem">
-					
-				</div>
-			</div>
-		</div>
+<div class="container-fluid d-flex align-items-center justify-content-center p-0 text-white wow animate__rotateIn" id="header-wrapper-div" >
+      <div class="row text-center w-100" id="header-row-div">
+        <div class="col-md-2 d-none d-md-flex align-items-center wow animate__fadeInLeft" data-wow-duration="8s">
+          <p></p>
+        </div>
+        <div class="col-8 mx-auto col-md-3 mb-5 wow animate__swing" data-wow-duration="3s" data-wow-iteration="infinite" id="header-photo-div">
+          <img class="img-fluid" src="https://res.cloudinary.com/it-s-tech/image/upload/v1590113436/favicon-no-background_zfff9h_1_1_xxhedh.png">
+        </div>
+        <div class="col-md-4 anime-move-up wow animate__zoomIn" data-wow-duration="10s" >
+          <h2 class="heading-standout">Get a world class agile product team to build and manage your website.</h2>
+          <p>At Group-itstech, we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast efficiency.</p>
+        </div>
+        <div class="col-md-2 d-none d-md-flex align-items-center wow animate__fadeInRight" data-wow-duration="8s">
+          <p></p>
+        </div>
+          <a class="phone-header-arrow d-md-none text-center wow animate__bounce" data-wow-duration="4s" data-wow-iteration="infinite" href="#"><i class="fa fa-angle-double-down"></i></a>
+          <a class="d-none d-md-inline header-arrow wow animate__bounce" data-wow-duration="4s" data-wow-iteration="infinite" href="#"><i class="fa fa-angle-double-down"></i></a>
+      </div>
+    </div>
 
-		<div class="caption text-center">
-			<h1>Welcome to Group-Itstech</h1>
-			<h3>Accessing Quality Education From Anywhere at a low cost</h3>
+    <nav class="navbar navbar-expand-md sticky-top" >
+      <a class="navbar-brand" href="/"><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1590111527/black-background-white_tbt6jx_1_ozluqe.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"><i class="fas fa-sliders-h text-white"></i></span>
+      </button>
 
-			
-			<%= link_to "Read More", about_path, class: "btn btn-outline-light btn-lg" %>
-		</div>
-	</section>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+           <a href="/pages/catalog" class="nav-link">Catalog</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/commission" class="nav-link">Commission</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/faq" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/pricing" class="nav-link">Pricing</a>
+          </li>
+                 
+        </ul>
+      </div>
+    </nav>
 
-	<section id="short-service-description-div" class="text-center">
-		<h3 id="description" class="mb-5 h2">Group-Itstech Is A Web Development Company engaged in the building of solution solving educational web application which offers services to the African public.</h3>
-		<%= link_to "Read More", about_path, class: "read-more" %>
-	</section>
+    <div class="container my-5" id="home-level-one">
+      <h1 class="d-none d-md-block text-center py-5">
+        We deploy world-class agile product teams on demand. Teams that can design, build, ship and scale your <br>web application in the most efficient way. 
+      </h1>
+      <h4 class="d-md-none text-center py-5">
+        We deploy world-class agile product teams on demand. Teams that can design, build, ship and scale your <br>web application in the most efficient way. 
+      </h4>
+      <p class="text-center"><i class="far fa-eye wow animate__flash" data-wow-duration="3s" data-wow-iteration="infinite"></i><a id="shift-up-link" class="links-general-slide-right d-inline-block" href="#">Take a look at our services.</a><p>
+    </div>
 
-	<section id= "technology-div" class="services">
-		    
-			<div id="services-content-holder">
-				<h5>Looking for a team of professionals</h5>
-			    <div class="service-content" id="service-content-title">
-					<h1>Our Technology</h1>
-					<i class="fa fa-cogs"></i>
-				</div>
-				<div class="row">
-					<div class="d-none d-md-block col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://jquery.com/" target="_blank">jQuery</a></h3><br>
-							<div class="service-pic-div-one">
-							    <a href="https://jquery.com/" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503408/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo-5ae94a5d86de89.8903081715252383655524_tnlav6.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p  class="see-more-paragraph"><a href="https://jquery.com/" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a></h3>
-							<div class="service-pic-div-one">
-							    <a href="https://www.ruby-lang.org/en/" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/kisspng-ruby-on-rails-logo-computer-programming-programmin-rails-5ac5a0cee22610.3850994615229011989263_xlrpze.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a href="https://www.ruby-lang.org/en/" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="d-none d-md-block col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">HTML5</a></h3><br>
-							<div class="service-pic-div-one">
-							    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/kisspng-web-development-responsive-web-design-advanced-css-5b1e73aae576a6.4591989815287223469399_ckamqv.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://rubyonrails.org/" target="_blank">Rails</a></h3><br>
-							<div class="service-pic-div-one">
-							    <a href="https://rubyonrails.org/" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/kisspng-ruby-on-rails-logo-software-framework-unicorn-ruby-on-rails-5-5b804d22f3d271.6421905815351350109987_db6tis.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a href="https://rubyonrails.org/" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">Javascript</a></h3>
-							<div class="service-pic-div-one">
-							    <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-javascript-logo-html-comment-blog-5ae63c23139110.5436874015250381150802_azwjln.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://reactjs.org/" target="_blank">React</a></h3>
-							<div class="service-pic-div-one">
-							    <a href="https://reactjs.org/" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-react-javascript-responsive-web-design-github-angu-github-5accac250cda95.4452823815233628530527_k9yekx.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a href="https://reactjs.org/" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://www.postgresql.org/about/" target="_blank">Postgresql</a></h3>
-							<div class="service-pic-div-one">
-							    <a href="https://www.postgresql.org/about/" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-postgresql-object-relational-database-oracle-datab-portfolio-whitebolt-whitebolt-5b65f8219026e9.0825897615334093135905_htau2z.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a href="https://www.postgresql.org/about/" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://skillcrush.com/2012/04/03/css/" target="_blank">CSS3</a></h3>
-							<div class="service-pic-div-one">
-							    <a href="https://skillcrush.com/2012/04/03/css/" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-css3-cascading-style-sheets-logo-html-logo-5abbf51be97508.5403277715222674199563_pvmc69.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a 
-							    	href="https://skillcrush.com/2012/04/03/css/" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="d-none d-md-block col-6 col-md-2 mx-auto">
-						<div class="service-content">
-		                    <h3><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Bootstrap 4</a></h3>
-							<div class="service-pic-div-one">
-							    <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">
-							    <%= image_tag("https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-bootstrap-logo-computer-software-web-application-p-b-5abb6c2ab15640.3860806115222323627264_qc1zfd.png", class: "service-pic img-thumbnail", alt: "missing picture") %>
-							    </a>
-							    <p class="see-more-paragraph"><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank" class="see-more-link">see more</a></p>
-							</div>
-						</div>
-					</div>
-				</div>				
-			</div>		
-	</section>
+    <section id="numbers" class="my-5">
+      <div class="container text-center">
+        <div class="header text-center">
+          <h1><strong>Numbers Never Lie</strong></h1>
+          <div class="header-underline"></div>
+          <p class="">More than 5 years in the game and we're just getting started. </p>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <i class="fa fa-users"></i>
+            <h3 class="d-none d-md-block">Clients</h3>
+            <h6 class="d-md-none">Clients</h6>
+            <h1><span class='numscroller' data-min='1' data-max='25' data-delay='50' data-increment='1'>25</span></h1>
+          </div>
 
-	<section id="home-page-services-wrapper" class="container-fluid pt-3 pb-3">
-			<div class="container">
-				<h2 class="text-center text-white">Our Services</h2>
-				<div class="row">
-					<div class="col-md-6 mb-3">
-						<div class="card text-center">
-							<div class="card-body">
-								<h4 class="card-title">FREELANCING</h4>
-								<p class="card-text service-paragraph">We are passionate about building your project under the following category</p>
-								<ol>
-									<li>Websites with blogs.</li>
-									<li>Android Applications.</li>
-									<li>Ecommerce</li>
-									<li>APIs</li>
-								</ol>
-								<!-- <a href="#" class="read-more">Read More</a> -->
-								<%= link_to "Read More", services_path, class: "read-more" %>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card text-center">
-							<div class="card-body">
-								<h4 class="card-title">EDUAFRIK.COM</h4>
-								<p class="card-text service-paragraph">This category of projects is what defines our nich. It is made up of project we build to solve societal issues. We have three projects in this list waiting for sponsorship</p>
-								<ol>
-									<li>Afriklearn</li>
-									<li>Afrikestate</li>
-									<li>myvote</li>
-								</ol>
+          <div class="col-4">
+            <i class="fa fa-envelope"></i>
+            <h3 class="d-none d-md-block">Experience</h3>
+            <h6 class="d-md-none">Experience</h6>
+            <h1><span class='numscroller' data-min='1' data-max='5' data-delay='20' data-increment='1'>5 years</span></h1>
+          </div>
 
-								<!-- <a href="#" class="read-more">Read More</a> -->
-								<%= link_to "Read More", projects_path, class: "read-more" %>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
+          <div class="col-4">
+            <i class="fa fa-archive"></i>
+            <h3 class="d-none d-md-block">Projects</h3>
+            <h6 class="d-md-none">Projects</h6>
+            <h1><span class='numscroller' data-min='1' data-max='45' data-delay='100' data-increment='1'>45</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section id="differences-section-div">
-		<div id="differences-row-div" class="row">
-			<div id="imagination-slogan-div" class="col-md-6 d-flex justify-content-center align-items-center">
-				<h1 class="text-white text-center">Our limit Is Your Imagination</h1>
-			</div>
-			<div id="differences-div" class="col-md-6 text-center">
-				<h3 class="mt-5">What Makes Us Different</h3>
-				<div class="row">
-					<div class="col-md-6 p-3">
-						<div class="card text-center">
-							<div class="card-body">
-								<h4 class="card-title differences-sub-heading">DELIVER WOW THROUGH IDEAS</h4>
-								<p class="card-text">We want to wow our clients with our ideas. We believe anything worth doing—from customer service, to strategy or design, should have WOW factor.</p>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-md-6 p-3">
-						<div class="card text-center">
-							<div class="card-body">
-								<h4 class="card-title differences-sub-heading">EMBRACE AND DRIVE CHANGE.</h4>
-								<p class="card-text">We are always thinking of ways to change processes, perspectives, and opinions for the best. We enjoy challenges, which sharpen us to grow and changing us to be the best in the world of technology.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 p-3">
-						<div class="card text-center">
-							<div class="card-body">
-								<h4 class="card-title differences-sub-heading">PURSUE GROWTH AND KNOWLEDGE.</h4>
-								<p class="card-text">We take delight in learning new ways and never stop growing. We don't want anyone to feel stuck in a rut, and are constantly looking for ways to challenge ourselves to learn, grow and push the boundaries of what we think is achievable.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 p-3">
-						<div class="card text-center">
-							<div class="card-body">
-								<h4 class="card-title differences-sub-heading">Affordable - not cheap.</h4>
-								<p class="card-text">Our goal is to deliver excellence to our clients, and to allow them to pass our affordability and high quality towards their customers. HighupWeb is here to help you get ahead of the competition.</p>
-							</div>
-						</div>
-					</div>
-				</div>				
-			</div>
-		</div>		
-	</section>
+    <div class="container-fluid" id="home-level-two">
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div>
+            <h1 class="text-center">Experts in every aspect of the product lifecycle</h1>
+            <p class="text-center genral-font-color">Whether you're a Fortune 500 or a startup in stealth mode - we give our clients the creative, technical and business talent they need to succeed.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="home-page-service-1">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+              <a class="links-general-slide-right text-center" href="#"><h3>Ideation And Evaluation</h3></a>
+            </div>
+          </div>
+          <div id="home-page-service-2">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+              <a class="links-general-slide-right" href="#"><h3>Product Design</h3></a>
+            </div>
+          </div>
+          <div id="home-page-service-3">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+              <a class="links-general-slide-right" href="#"><h3>Web Development</h3></a>
+            </div>
+          </div>
+          <div id="home-page-service-4">
+            <div class="home-page-service-content d-flex justify-content-center align-items-center h-100">
+              <a class="links-general-slide-right" href="#"><h3>Mobile Development</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	
+    <section class="py-5" id="clients">
+      <div class="container py-5">
+        <div class="header text-center py-5">
+          <h2>Our Technology</h2>
+          <div class="header-underline"></div>
+          <p class="text-muted">We give you the best out of the latest technologies</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="logo" class="owl-carousel owl-theme">
+
+              <div class="logos">
+                <div><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1590289449/WordPress-logotype-alternative_bknnst.png" class="img-fluid"></div>
+              </div>
+              <div class="logos">
+                <div><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/kisspng-ruby-on-rails-logo-computer-programming-programmin-rails-5ac5a0cee22610.3850994615229011989263_xlrpze.png" class="img-fluid"></div>
+              </div>
+              <div class="logos">
+                <div><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/kisspng-web-development-responsive-web-design-advanced-css-5b1e73aae576a6.4591989815287223469399_ckamqv.png" class="img-fluid"></div>
+              </div>
+              <div class="logos">
+                <div><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1580503407/kisspng-ruby-on-rails-logo-software-framework-unicorn-ruby-on-rails-5-5b804d22f3d271.6421905815351350109987_db6tis.png" class="img-fluid"></div>
+              </div>
+              <div class="logos">
+                <div><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-javascript-logo-html-comment-blog-5ae63c23139110.5436874015250381150802_azwjln.png" class="img-fluid"></div>
+              </div>
+              <div class="logos">
+                <div><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-react-javascript-responsive-web-design-github-angu-github-5accac250cda95.4452823815233628530527_k9yekx.png" class="img-fluid"></div>
+              </div>
+              <div class="logos">
+                <div><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1580503406/kisspng-css3-cascading-style-sheets-logo-html-logo-5abbf51be97508.5403277715222674199563_pvmc69.png" class="img-fluid"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid py-5 text-center text-white" id="home-level-three">
+      <h3>Tells us about your website</h3>
+      <a class="background-button-link d-inline-block mt-4" href="#">Request</a>
+    </div>
+
+    <div class="container py-5" id="home-level-four">
+      <p class="text-center genral-font-color">
+        Group-itstech builds softwares that lets people do things differently. Share your challenge <br>with our team and we’ll work with you to deliver a revolutionary digital product.
+      </p>
+    </div>
+
+    <section id="quotes">
+  <div class="quotes-background py-5">
+    <div class="container">
+      <div class="header text-center">
+        <h1><strong>What They Say</strong></h1>
+        <div class="header-underline"></div>
+        <p class="">Let others speak for us</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="customers" class="owl-carousel owl-theme">
+
+            <div class="customer text-center">
+              <img src="https://res.cloudinary.com/it-s-tech/image/upload/v1590291042/IMG-20200130-WA0004_z9j2gn_1_gum4pm.jpg" class="img-fluid rounded-circle img-thumbnail" alt="trump" style="display: inline;">
+              <blockquote>
+                <i class="fa fa-quote-left"></i>
+                The best agency we’ve worked with so far. Group-itstech understands our product and is able to add new features with a great focus on speed to market.
+                <footer class="heading-standout">Geneve Kofi / CEO of Kabin</footer>
+              </blockquote>
+            </div>
+            <div class="customer text-center">
+              <img src="https://res.cloudinary.com/it-s-tech/image/upload/v1590291043/DSC_0318xxxxxx_nuze7h_1_mdrzwx.jpg" class="img-fluid rounded-circle img-thumbnail" alt="trump" style="display: inline;">
+              <blockquote>
+                <i class="fa fa-quote-left"></i>
+                I’ve had a long-lasting partnership with Group-itstech. They always try to make things possible.
+                <footer>King Onesimus / founder of Juicii shop</footer>
+              </blockquote>
+            </div>
+            <div class="customer text-center">
+              <img src="https://res.cloudinary.com/it-s-tech/image/upload/v1590291043/IMG-20200130-WA0009_mgkf9p_1_iunlre.jpg" class="img-fluid rounded-circle img-thumbnail" alt="trump" style="display: inline;">
+              <blockquote>
+                <i class="fa fa-quote-left"></i>
+                I really appreciate that you take ownership, you're experienced and that we can rely on you. I’m happy to say that so far it has worked out tremendously well for solarisBank.
+                <footer>Mbake  Elias / Director of Innovation at Keller Williams</footer>
+              </blockquote>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
