@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <p>
   <strong>Photo link:</strong>
@@ -12,7 +11,7 @@
 
 <p>
   <strong>Body:</strong>
-  <%= @blog.body %>
+  <%= markdown(@blog.body) %>
 </p>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
