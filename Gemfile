@@ -70,3 +70,4 @@ gem 'jquery-rails'
 gem 'font_awesome5_rails'
 # Nokogiri
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'redcarpet', '~> 3.5'

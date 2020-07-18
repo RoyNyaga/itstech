@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :blogs
   get  '/help',    to: 'static_pages#help'
   get '/about', to: 'pages#about'
   get '/services', to: 'pages#services'
