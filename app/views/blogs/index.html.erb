@@ -1,31 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="container py-5">
+  <div class="row pt-5">   
+    <div class="col-md-7">
+      <% @blogs.each do |blog| %>
+      <div class="blog-index-card my-4">
+        <h1 class="mb-3 text-center"><%= blog.title %></h1>
+        <%=link_to image_tag(blog.photo_link, class: "img-fluid"), blog %>
+        <%=link_to blog.body.truncate(200, separator: ' '), blog, class: "links-general-slide-right d-inline-block" %>
+        <p><%= link_to "Read more", blog, class: "links-general-slide-right d-inline-block" %></p>
+      </div>
+      <% end %>
+    </div>
+    
+    <div class="col-md-4"><h1>other side</h1></div>
+  </div>
+</div>
 
-<h1>Blogs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Photo link</th>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.photo_link %></td>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
