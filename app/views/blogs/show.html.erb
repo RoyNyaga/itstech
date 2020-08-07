@@ -4,6 +4,11 @@
 		<div class="col-md-9">
 			<h2 class="heading-standout text-center my-5"><%= @blog.title %></h2>
 			<%= image_tag(@blog.photo_link, class: "img-fluid") %>
+			<div class="blog-body my-5">
+			  <%= markdown(@blog.body) %>
+			</div>
+			<%= link_to 'Edit', edit_blog_path(@blog) %> |
+			<%= link_to 'Back', blogs_path %>
 		</div>
 		<div class="col-md-3">
 			<div style="position: -webkit-sticky; position: sticky; top: 100px;">
@@ -15,15 +20,6 @@
 </div>
 
 
-<p>
-  <strong>Title:</strong>
-  
-</p>
 
-<p>
-  <strong>Body:</strong>
-  <%= markdown(@blog.body) %>
-</p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+
