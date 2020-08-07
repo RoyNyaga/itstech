@@ -1,12 +1,23 @@
+<%= render "partials/nav" %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<h2 class="heading-standout text-center my-5"><%= @blog.title %></h2>
+			<%= image_tag(@blog.photo_link, class: "img-fluid") %>
+		</div>
+		<div class="col-md-3">
+			<div style="position: -webkit-sticky; position: sticky; top: 100px;">
+				<h3 class="heading-standout">Related topics</h3>
+			</div>
+		</div>
+	</div>
+	
+</div>
 
-<p>
-  <strong>Photo link:</strong>
-  <%= @blog.photo_link %>
-</p>
 
 <p>
   <strong>Title:</strong>
-  <%= @blog.title %>
+  
 </p>
 
 <p>
