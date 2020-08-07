@@ -10,6 +10,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @blog.update_attributes(review: @blog.review += 1)
   end
 
   # GET /blogs/new
