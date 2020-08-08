@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get '/clients', to: 'pages#client'
   root 'pages#home'
 
+  get '/update_likes/:id', to: 'blogs#like_blog', as: 'likeblog'
+
 end

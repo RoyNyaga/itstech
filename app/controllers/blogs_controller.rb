@@ -22,6 +22,12 @@ class BlogsController < ApplicationController
   def edit
   end
 
+  def like_blog
+    @blog = Blog.find(params[:id])
+    @blog.update_attributes(likes: @blog.likes += 1)
+    render "show"
+  end
+
   # POST /blogs
   # POST /blogs.json
   def create
