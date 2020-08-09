@@ -1,32 +1,32 @@
 <%= render "partials/nav" %>
 <div class="container">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-9 mb-5">
 			<h2 class="heading-standout text-center my-5"><%= @blog.title %></h2>
 			<%= image_tag(@blog.photo_link, class: "img-fluid") %>
 			<div class="blog-body my-5">
 			  <%= markdown(@blog.body) %>
 			</div>
-			<%= link_to 'Edit', edit_blog_path(@blog) %> |
-			<%= link_to 'Back', blogs_path %>
-			<h4>
-				Leave us a like if you find this article interesting 
+			<!-- <%#= link_to 'Edit', edit_blog_path(@blog) %> | -->
+			<!-- <%#= link_to 'Back', blogs_path %> -->
+			<h5>
+				Leave us a like if you find this article interesting. 
 				<%= link_to likeblog_path(@blog.id), :class=> "you_class" do %>
 				    <i class="fas fa-heart" style="font-size: 1.5em;"></i>
 				<% end %>
-			</h4>
+			</h5>
 		</div>
 		<div class="col-md-3">
 			<div style="position: -webkit-sticky; position: sticky; top: 100px;">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-6">
 						<h2 class="blog-numbers"><%= @blog.review %></h2>
 						<h5>Views</h5>
 					</div>
-					<div class="col-md-6">
+					<div class="col-6">
 						<h2 class="blog-numbers"><%= @blog.likes %></h2>
 						<%= link_to likeblog_path(@blog.id), :class=> "you_class" do %>
-						    <i class="fas fa-heart" style="font-size: 1.5em;"></i>
+						    <i class="fas fa-heart wow animate__rubberBand" data-wow-duration="4s" data-wow-iteration="infinite" style="font-size: 1.5em;"></i>
 						<% end %>
 					</div>
 				</div>
