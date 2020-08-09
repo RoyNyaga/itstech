@@ -9,6 +9,12 @@
 			</div>
 			<%= link_to 'Edit', edit_blog_path(@blog) %> |
 			<%= link_to 'Back', blogs_path %>
+			<h4>
+				Leave us a like if you find this article interesting 
+				<%= link_to likeblog_path(@blog.id), :class=> "you_class" do %>
+				    <i class="fas fa-heart" style="font-size: 1.5em;"></i>
+				<% end %>
+			</h4>
 		</div>
 		<div class="col-md-3">
 			<div style="position: -webkit-sticky; position: sticky; top: 100px;">
@@ -23,7 +29,6 @@
 						    <i class="fas fa-heart" style="font-size: 1.5em;"></i>
 						<% end %>
 					</div>
-
 				</div>
 				<h3 class="heading-standout mt-4">Related topics</h3>
 			</div>
