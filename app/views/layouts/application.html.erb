@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105026941-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-105026941-2');
+    </script>
+
     <title>Itstech</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Group-Itstech, transforming technology in Cameroon, web development ecommerce">
+    <meta name="description" content="Group-Itstech, providing solutions through technology, web development, ecommerce, Android development.">
     <link rel="icon" href="https://res.cloudinary.com/it-s-tech/image/upload/v1594784208/favicon-no-background_1_1_wvqdh4.png">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
