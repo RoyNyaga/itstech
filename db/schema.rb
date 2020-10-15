@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_052212) do
+ActiveRecord::Schema.define(version: 2020_10_15_053932) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(version: 2020_10_15_052212) do
     t.string "slug"
     t.integer "review", default: 0
     t.integer "likes", default: 0
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_blogs_on_category_id"
   end
 
   create_table "categories", force: :cascade do |t|
