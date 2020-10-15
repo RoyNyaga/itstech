@@ -26,6 +26,26 @@
     <%= form.text_area :body, style: "height: 500px; width: 500px;" %>
   </div>
 
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.text_field :time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div class="field">
+    <%= form.label :author_photo %>
+    <%= form.text_field :author_photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.collection_select :category_name, Category.all, :name, :name %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
