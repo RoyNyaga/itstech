@@ -4,6 +4,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
+    @categories = Category.all
     @blogs = Blog.all
   end
 

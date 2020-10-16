@@ -9,7 +9,8 @@
             <%=link_to image_tag(blog.photo_link, class: "img-fluid"), blog %>
           </div>
           <div class="col-8">
-            <h5 class="mb-3 text-center"><%= blog.title %></h5>
+            <h5 class="mb-3 text-center d-none d-md-block"><%= blog.title %></h5>
+            <h6 class="mb-3 text-center d-md-none"><%= blog.title %></h6>
             <%=link_to blog.body.truncate(100, separator: ' '), blog, class: "links-general-slide-right d-none d-md-inline-block" %>
             </div>
         </div>
@@ -18,7 +19,10 @@
     </div>    
     <div class="col-md-4 mt-5">
       <div style="position: -webkit-sticky; position: sticky; top: 100px;">
-        <h1 class="text-center heading-standout">Related topics</h1>
+        <h3 class="text-center heading-standout">There Is More To Read</h3>
+        <% @categories.each do |category| %>
+          <p class="text-center"><%= category.name %></p>
+        <% end %>
       </div>
     </div>
   </div>
