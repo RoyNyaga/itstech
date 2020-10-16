@@ -1,5 +1,6 @@
-<div class="container">
-    <h2>Topics Related to <%= @category.name %></h2>
+<%= render "partials/nav" %>
+<div class="container mt-5">
+    <h3 class="text-center">Topics Related to <%= @category.name %></h3>
     <% @category_blogs.each do |blog| %>
         <div class="blog-index-card my-4 border">
           <div class="row">
@@ -7,10 +8,11 @@
               <%=link_to image_tag(blog.photo_link, class: "img-fluid"), blog %>
             </div>
             <div class="col-8">
-              <h5 class="mb-3 text-center d-none d-md-block"><%= blog.title %></h5>
+              <h5 class="mb-3 text-center d-none d-md-block pt-4"><%= blog.title %></h5>
               <h6 class="mb-3 text-center d-md-none"><%= blog.title %></h6>
-              <%=link_to blog.body.truncate(100, separator: ' '), blog, class: "links-general-slide-right d-none d-md-inline-block" %>
-              </div>
+              <%=link_to blog.body.truncate(300, separator: ' '), blog, class: "links-general-slide-right d-none d-md-inline-block" %>
+              <p class="text-muted d-none d-md-block"><%= blog.time %> Minutes Read</p>
+            </div>
           </div>
         </div>
     <% end %>

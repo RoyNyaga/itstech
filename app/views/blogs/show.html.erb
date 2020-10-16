@@ -1,14 +1,12 @@
 <%= render "partials/nav" %>
-<div class="container">
+<div class="container blog-show-page-div">
 	<div class="row">
 		<div class="col-md-9 mb-5">
-			<h2 class="heading-standout text-center my-5"><%= @blog.title %></h2>
+			<h1 class="text-center my-5 blod blog-header-1"><%= @blog.title %></h1>
 			<%= image_tag(@blog.photo_link, class: "img-fluid") %>
 			<div class="blog-body my-5">
 			  <%= markdown(@blog.body) %>
 			</div>
-			<!-- <%#= link_to 'Edit', edit_blog_path(@blog) %> | -->
-			<!-- <%#= link_to 'Back', blogs_path %> -->
 			<h5>
 				Leave us a like if you find this article interesting. 
 				<%= link_to likeblog_path(@blog.id), :class=> "you_class" do %>
@@ -31,10 +29,10 @@
 					</div>
 				</div>
 				<h3 class="heading-standout mt-4">Related topics</h3>
+				<%=link_to "edit blog", edit_blog_path(@blog) %>
 			</div>
 		</div>
 	</div>
-	
 </div>
 
 
