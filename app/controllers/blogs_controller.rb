@@ -80,8 +80,8 @@ class BlogsController < ApplicationController
         :photo_link, 
         :title, 
         :body, 
-        :time, 
-        :category_id,
+        :time,  
+        :category_name,
         :author,
         :author_photo
         )

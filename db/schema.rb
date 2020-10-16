@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_062431) do
+ActiveRecord::Schema.define(version: 2020_10_16_031810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2020_10_15_062431) do
   end
 
   create_table "blogs", force: :cascade do |t|
-    t.string "photo_link" 
+    t.string "photo_link"
     t.string "title"
     t.text "body"
     t.datetime "created_at", null: false
@@ -52,9 +52,11 @@ ActiveRecord::Schema.define(version: 2020_10_15_062431) do
     t.integer "likes", default: 0
     t.bigint "category_id"
     t.string "author"
-    t.string "photo"
+    t.string "author_photo"
     t.string "time"
+    t.string "category_name"
     t.index ["category_id"], name: "index_blogs_on_category_id"
+    t.index ["category_name"], name: "index_blogs_on_category_name"
   end
 
   create_table "categories", force: :cascade do |t|
