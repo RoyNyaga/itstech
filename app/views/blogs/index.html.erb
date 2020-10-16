@@ -3,11 +3,16 @@
   <div class="row pt-5">   
     <div class="col-md-7">
       <% @blogs.each do |blog| %>
-      <div class="blog-index-card my-4">
-        <h1 class="mb-3 text-center heading-standout"><%= blog.title %></h1>
-        <%=link_to image_tag(blog.photo_link, class: "img-fluid"), blog %>
-        <%=link_to blog.body.truncate(200, separator: ' '), blog, class: "links-general-slide-right d-inline-block" %>
-        <p><%= link_to "Read more", blog, class: "links-general-slide-right d-inline-block" %></p>
+      <div class="blog-index-card my-4 border">
+        <div class="row">
+          <div class="col-4">
+            <%=link_to image_tag(blog.photo_link, class: "img-fluid"), blog %>
+          </div>
+          <div class="col-8">
+            <h5 class="mb-3 text-center"><%= blog.title %></h5>
+            <%=link_to blog.body.truncate(100, separator: ' '), blog, class: "links-general-slide-right d-none d-md-inline-block" %>
+            </div>
+        </div>
       </div>
       <% end %>
     </div>    
