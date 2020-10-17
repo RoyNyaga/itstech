@@ -396,6 +396,10 @@ body{
 	font-family: 'EB Garamond', serif;
 }
 
+.blog-header-1{
+	font-size: 3.2em;
+}
+
 .blog-body img{
 	width: 80%;
 	display: block;
@@ -407,6 +411,11 @@ body{
 	color: #496e79;
 }
 
-.blog-header-1{
-	font-size: 3.2em;
+.blog-body code {
+	display: block;
+	background: #274d58;
+	color: white;
+	border-radius: 10%;
 }
+
+
