@@ -12,6 +12,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     @blog.update_attributes(review: @blog.review += 1)
+    @category_blogs = Category.find_by(name: @blog.category_name).blogs
   end
 
   # GET /blogs/new

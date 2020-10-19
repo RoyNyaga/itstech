@@ -32,7 +32,12 @@
 						<span class="badge badge-secondary bg-info my-0"><%= @blog.author %></span>
 					</div>
 				</div>
-				<h3 class="heading-standout mt-4">Related topics</h3>
+				<h4 class="heading-standout mt-4">Related topics</h4>
+				<% Category.all.each do |category|
+					<% if category.name == @blog.category_name %>
+
+					<% end %>
+				<% end %>
 				<%=link_to "edit blog", edit_blog_path(@blog) %>
 			</div>
 		</div>
