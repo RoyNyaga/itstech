@@ -17,15 +17,19 @@
 		<div class="col-md-3">
 			<div style="position: -webkit-sticky; position: sticky; top: 100px;">
 				<div class="row">
-					<div class="col-6">
-						<h2 class="blog-numbers"><%= @blog.review %></h2>
-						<h5>Views</h5>
+					<div class="col-3">
+						<h3 class="blog-numbers"><%= @blog.review %></h3>
+						<h5 class="my-0"><span class="badge badge-secondary bg-info my-0">views</span></h5>
 					</div>
-					<div class="col-6">
-						<h2 class="blog-numbers"><%= @blog.likes %></h2>
+					<div class="col-2">
+						<h3 class="blog-numbers"><%= @blog.likes %></h3>
 						<%= link_to likeblog_path(@blog.id), :class=> "you_class" do %>
-						    <i class="fas fa-heart wow animate__rubberBand" data-wow-duration="4s" data-wow-iteration="infinite" style="font-size: 1.5em;"></i>
+						    <i class="fas fa-heart text-info wow animate__rubberBand" data-wow-duration="4s" data-wow-iteration="infinite" style="font-size: 1.5em;"></i>
 						<% end %>
+					</div>
+					<div class="col-4">
+						<%= image_tag(@blog.author_photo, style: "width: 100%; border: 2px solid #00ace0; border-radius: 50%;") %>
+						<span class="badge badge-secondary bg-info my-0"><%= @blog.author %></span>
 					</div>
 				</div>
 				<h3 class="heading-standout mt-4">Related topics</h3>
