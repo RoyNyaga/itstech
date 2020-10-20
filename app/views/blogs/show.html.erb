@@ -23,7 +23,8 @@
 	</div>
 	<div class="row">
 		<div class="col-md-9 mb-5 p-4">
-			<h1 class="text-center blod blog-header-1"><%= @blog.title %></h1>
+			<h1 class="text-center blod blog-header-1 d-none d-md-block"><%= @blog.title %></h1>
+			<h1 class="text-center blod d-md-none"><%= @blog.title %></h1>
 			<h4 class="text-muted m-0 p-0"><%= @blog.time %> minutes read</h4>
 			<%= image_tag(@blog.photo_link, class: "img-fluid") %>
 			<div class="blog-body my-5">
@@ -32,7 +33,7 @@
 			<h5>
 				Leave us a like if you find this article interesting. 
 				<%= link_to likeblog_path(@blog.id), :class=> "you_class" do %>
-				    <i class="fas fa-heart" style="font-size: 1.5em;"></i>
+				    <i class="text-info fas fa-heart" style="font-size: 1.2em;"></i>
 				<% end %>
 			</h5>
 		</div>
@@ -50,8 +51,10 @@
 						<% end %>
 					</div>
 					<div class="col-4">
-						<%= image_tag(@blog.author_photo, style: "width: 100%; border: 2px solid #00ace0; border-radius: 50%;") %>
-						<span class="badge badge-secondary bg-info my-0"><%= @blog.author %></span>
+						<a href="#"> 
+							<%= image_tag(@blog.author_photo, style: "width: 100%; border: 2px solid #00ace0; border-radius: 50%;") %>
+							<span class="badge badge-secondary bg-info my-0"><%= @blog.author %></span>
+						</a>
 					</div>
 					<div class="col-12">
 						<h4 class="heading-standout mt-4">Related topics</h4>
