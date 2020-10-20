@@ -1,8 +1,30 @@
 <%= render "partials/nav" %>
 <div class="container blog-show-page-div">
 	<div class="row">
+		<div class="col-md-6 mx-auto">
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<img style="width: 100%;" src="https://res.cloudinary.com/it-s-tech/image/upload/v1599489802/Screen_Shot_2020-09-07_at_3.42.48_PM_g9hgkb.png">
+					</div>
+					<div class="col-md-6 col-12">
+						<h3>Get a well designed website 50%!!! Off</h3>
+						<a class="text-center background-button-link 
+						d-inline-block mt-4 wow animate__shakeY animated" 
+						data-wow-duration="3s" data-wow-iteration="infinite" 
+						href="mailto:itstechcam@gmail.com">Tell Us About Your Website</a>
+					</div>
+				</div>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-md-9 mb-5 p-4">
-			<h1 class="text-center my-5 blod blog-header-1"><%= @blog.title %></h1>
+			<h1 class="text-center blod blog-header-1"><%= @blog.title %></h1>
+			<h4 class="text-muted m-0 p-0"><%= @blog.time %> minutes read</h4>
 			<%= image_tag(@blog.photo_link, class: "img-fluid") %>
 			<div class="blog-body my-5">
 			  <%= markdown(@blog.body) %>
@@ -35,7 +57,7 @@
 						<h4 class="heading-standout mt-4">Related topics</h4>
 					</div>
 					<% @category_blogs.each do |category_blog| %>
-						<div class="blog-index-card my-4 border">
+						<div class="blog-index-card my-1 border">
 							<div class="row">
 								<div class="col-4 p-0 m-0 bg-danger">
 									<%=link_to image_tag(category_blog.photo_link, style: "width: 100%;"), category_blog %>
