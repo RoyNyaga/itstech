@@ -3,14 +3,14 @@
   <div class="row pt-5">   
     <div class="col-md-7">
       <% @blogs.each do |blog| %>
-      <div class="blog-index-card my-4 border">
-        <div class="row">
-          <div class="col-4">
-            <%=link_to image_tag(blog.photo_link, class: "img-fluid"), blog %>
+      <div class="blog-index-card my-4">
+        <div class="row border">
+          <div class="col-4 p-0">
+            <%=link_to image_tag(blog.photo_link, style: "width: 100%;"), blog %>
           </div>
-          <div class="col-8">
+          <div class="col-8 p-0">
             <h5 class="mb-3 text-center d-none d-md-block"><%= blog.title %></h5>
-            <h6 class="mb-3 text-center d-md-none"><%= blog.title %></h6>
+            <%=link_to blog.title, blog, class: "links-general-slide-right d-md-none", style: "font-size: 0.7;" %>
             <%=link_to blog.body.truncate(100, separator: ' '), blog, class: "links-general-slide-right d-none d-md-inline-block" %>
             </div>
         </div>
