@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_07_235815) do
+ActiveRecord::Schema.define(version: 2020_10_16_031810) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,13 +44,25 @@ ActiveRecord::Schema.define(version: 2020_08_07_235815) do
   create_table "blogs", force: :cascade do |t|
     t.string "photo_link"
     t.string "title"
-    t.text "body"
+    t.text "body" 
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
-    t.string "category", default: "general"
     t.integer "review", default: 0
     t.integer "likes", default: 0
+    t.bigint "category_id"
+    t.string "author"
+    t.string "author_photo"
+    t.string "time"
+    t.string "category_name"
+    t.index ["category_id"], name: "index_blogs_on_category_id"
+    t.index ["category_name"], name: "index_blogs_on_category_name"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|

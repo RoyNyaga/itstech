@@ -4,6 +4,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
+    @categories = Category.all
     @blogs = Blog.all
   end
 
@@ -11,6 +12,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     @blog.update_attributes(review: @blog.review += 1)
+    @category_blogs = Category.find_by(name: @blog.category_name).blogs
   end
 
   # GET /blogs/new
@@ -76,6 +78,14 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:photo_link, :title, :body)
+      params.require(:blog).permit(
+        :photo_link, 
+        :title, 
+        :body, 
+        :time,  
+        :category_name,
+        :author,
+        :author_photo
+        )
     end
 end
