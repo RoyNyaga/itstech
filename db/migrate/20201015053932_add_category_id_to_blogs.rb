@@ -3,3 +3,4 @@ class AddCategoryIdToBlogs < ActiveRecord::Migration[5.2]
     add_reference :blogs, :category
   end
 end
+ 

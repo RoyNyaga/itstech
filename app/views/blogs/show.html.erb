@@ -1,8 +1,8 @@
 <%= render "partials/nav" %>
+<%= render "partials/publicity" %>
 <div class="container blog-show-page-div">
-	<%= render "partials/publicity" %>
 	<div class="row">
-		<div class="col-md-9 mb-5 p-4">
+		<div class="col-md-9 col-11 mb-5 p-4">
 			<h1 class="text-center blod blog-header-1 d-none d-md-block"><%= @blog.title %></h1>
 			<h1 class="text-center blod d-md-none"><%= @blog.title %></h1>
 			<h4 class="text-muted m-0 p-0"><%= @blog.time %> minutes read</h4>
@@ -39,19 +39,23 @@
 					<div class="col-12">
 						<h4 class="heading-standout mt-4">Related topics</h4>
 					</div>
-					<% @category_blogs.each do |category_blog| %>
-						<div class="blog-index-card my-1 border">
-							<div class="row">
-								<div class="col-4 p-0 m-0 bg-danger">
-									<%=link_to image_tag(category_blog.photo_link, style: "width: 100%;"), category_blog %>
-								</div>
-								<div class="col-7 mx-auto m-0 p-0">
-									<%=link_to(category_blog.title, category_blog, style: "font-size: 0.8em;", class: "links-general-slide-right d-none d-md-inline-block") %>
-									<%=link_to(category_blog.title, category_blog, style: "font-size: 1.1em;", class: "links-general-slide-right d-md-none") %>
-								</div>
-							</div>
-						</div>
-					<% end %>
+          <div class="col-12">
+              <% if @category_blogs %>
+                <% @category_blogs.each do |category_blog| %>
+                  <div class="blog-index-card my-1 border">
+                    <div class="row">
+                      <div class="col-4 p-0 m-0">
+                        <%=link_to image_tag(category_blog.photo_link, style: "width: 100%;"), category_blog %>
+                      </div>
+                      <div class="col-7 mx-auto m-0 p-0">
+                        <%=link_to(category_blog.title, category_blog, style: "font-size: 0.8em;", class: "links-general-slide-right d-none d-md-inline-block") %>
+                        <%=link_to(category_blog.title, category_blog, style: "font-size: 1.1em;", class: "links-general-slide-right d-md-none") %>
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+          </div>
 				</div>
 				
 				
