@@ -42,6 +42,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :authors_link %>
+    <%= form.text_field :authors_link %>
+  </div>
+
+  <div class="field">
     <%= form.label :category %>
     <%= form.collection_select :category_name, Category.all, :name, :name %>
   </div>
