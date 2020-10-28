@@ -7,7 +7,7 @@
 			<h1 class="text-center blod d-md-none"><%= @blog.title %></h1>
 			<h4 class="text-muted m-0 p-0"><%= @blog.time %> minutes read</h4>
 			<%= image_tag(@blog.photo_link, class: "img-fluid") %>
-			<div class="blog-body my-5">
+			<div class="blog-body my-5 border-bottom">
 			  <%= markdown(@blog.body) %>
 			</div>
 			<h5>
@@ -15,7 +15,10 @@
 				<%= link_to likeblog_path(@blog.id), :class=> "you_class" do %>
 				    <i class="text-info fas fa-heart" style="font-size: 1.2em;"></i>
 				<% end %>
-			</h5>
+      </h5>
+      <a href="<%= @blog.authors_link %>">
+        <p>Please hit me up on linkedIn in case you have any question. Thanks for reading my article.</p>
+      </a>
 		</div>
 		<div class="col-md-3">
 			<div style="position: -webkit-sticky; position: sticky; top: 100px;">
@@ -30,8 +33,8 @@
 						    <i class="fas fa-heart text-info wow animate__rubberBand" data-wow-duration="4s" data-wow-iteration="infinite" style="font-size: 1.5em;"></i>
 						<% end %>
 					</div>
-					<div class="col-4">
-						<a href="#"> 
+					<div class="col-4 text-center">
+						<a href="<%=@blog.authors_link %>" target="_blank"> 
 							<%= image_tag(@blog.author_photo, style: "width: 100%; border: 2px solid #00ace0; border-radius: 50%;") %>
 							<span class="badge badge-secondary bg-info my-0"><%= @blog.author %></span>
 						</a>
@@ -56,9 +59,7 @@
                 <% end %>
               <% end %>
           </div>
-				</div>
-				
-				
+				</div>				
 				<%=link_to "edit blog", edit_blog_path(@blog) %>
 			</div>
 		</div>
