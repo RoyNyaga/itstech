@@ -85,7 +85,8 @@ class BlogsController < ApplicationController
         :time,  
         :category_name,
         :author,
-        :author_photo
+        :author_photo,
+        :authors_link
         )
     end
 end
