@@ -42,21 +42,21 @@
 						<h4 class="heading-standout mt-4">Related topics</h4>
 					</div>
           <div class="col-12">
-              <% if @category_blogs %>
-                <% @category_blogs.each do |category_blog| %>
-                  <div class="blog-index-card my-1 border">
-                    <div class="row">
-                      <div class="col-4 p-0 m-0">
-                        <%=link_to image_tag(category_blog.photo_link, style: "width: 100%;"), category_blog %>
-                      </div>
-                      <div class="col-7 mx-auto m-0 p-0">
-                        <%=link_to(category_blog.title, category_blog, style: "font-size: 0.8em;", class: "links-general-slide-right d-none d-md-inline-block") %>
-                        <%=link_to(category_blog.title, category_blog, style: "font-size: 1.1em;", class: "links-general-slide-right d-md-none") %>
-                      </div>
+            <% if @category_blogs %>
+              <% @category_blogs.each do |category_blog| %>
+                <div class="blog-index-card my-1 border">
+                  <div class="row">
+                    <div class="col-4 p-0 m-0">
+                      <%=link_to image_tag(category_blog.photo_link, style: "width: 100%;"), category_blog %>
+                    </div>
+                    <div class="col-7 mx-auto m-0 p-0">
+                      <%=link_to(category_blog.title, category_blog, style: "font-size: 0.8em;", class: "links-general-slide-right d-none d-md-inline-block") %>
+                      <%=link_to(category_blog.title, category_blog, style: "font-size: 1.1em;", class: "links-general-slide-right d-md-none") %>
                     </div>
                   </div>
-                <% end %>
+                </div>
               <% end %>
+            <% end %>
           </div>
 				</div>				
 				<%#=link_to "edit blog", edit_blog_path(@blog) %>
