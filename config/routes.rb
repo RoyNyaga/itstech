@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   get '/update_likes/:id', to: 'blogs#like_blog', as: 'likeblog'
 
+  resources :email_subscriptions
+
 end
