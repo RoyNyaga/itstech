@@ -13,6 +13,7 @@ class BlogsController < ApplicationController
   def show
     @blog.update_attributes(review: @blog.review += 1)
     @category_blogs = Category.find_by(name: @blog.category_name).blogs
+    @email_subscription = EmailSubscription.new
   end
 
   # GET /blogs/new
@@ -34,6 +35,7 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
+    @blog.category = Category.find_by(name: params[:blog][:category_name])
 
     respond_to do |format|
       if @blog.save
