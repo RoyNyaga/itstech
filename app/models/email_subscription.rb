@@ -1,4 +1,4 @@
 class EmailSubscription < ApplicationRecord
   
-  validate :email, presence: true
+  validates :email, presence: true
 end
