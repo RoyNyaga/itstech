@@ -1,0 +1,3 @@
+class EmailSubscription < ApplicationRecord
+  
+end
