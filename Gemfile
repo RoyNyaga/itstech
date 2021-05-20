@@ -69,7 +69,7 @@ gem 'jquery-rails'
 
 gem 'font_awesome5_rails'
 # Nokogiri
-gem 'nokogiri', '~> 1.10'
+gem 'nokogiri', '~> 1.11'
 gem 'redcarpet', '~> 3.5'
 gem 'friendly_id', '~> 5.3'
 gem 'activeadmin'
